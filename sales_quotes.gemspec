@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "A simple way to inspire those in need of insperation"
   s.authors     = ["Nate Daily"]
   s.email       = 'ndaily@netmediagroup.com'
-  s.files       = ["lib/sales_quotes.rb","quotes.yaml"]
+  s.files       = ["lib/sales_quotes.rb","lib/quotes.yaml"]
   s.homepage    ='https://github.com/nzajt/sales_quotes'
   s.license     = 'MIT'
 end
