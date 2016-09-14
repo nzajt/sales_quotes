@@ -3,12 +3,12 @@ require 'yaml'
 class SalesQuotes
   attr_reader :quotes
 
-  def initialize
-    @quotes = symbolize_array(YAML.load_file("#{__dir__}/quotes.yaml")["quotes"])
-  end
-
   def self.random
     SalesQuotes.new.quotes.sample
+  end
+
+  def initialize
+    @quotes = symbolize_array(YAML.load_file("#{__dir__}/quotes.yaml")["quotes"])
   end
 
   private
